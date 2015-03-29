@@ -24,5 +24,5 @@ for server in ${server_apt[@]}
 for server in ${server_yum[@]}
  do
         echo $server
-        ssh root@$server 'yum update'
+        ssh root@$server 'yum -y update'
  done
